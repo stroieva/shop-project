@@ -485,10 +485,8 @@ body {
     font-weight: 300px;
 }
 
-
-
 .footer { 
-    min-width: 1200px;
+   min-width: 1200px;
    height: 100px;
    background-color: rgb(255,255,255,0.75);
 }
@@ -499,4 +497,57 @@ body {
     color: #3577bb;
     font-size: 21px;
     font-weight: 300px;
+}
+
+.product-name-parameters{
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 40px;
+    padding-left: 30px;
+}
+
+.product-parameters{
+    font-weight: bold;
+    padding-top: 32px;
+}
+
+label::before{
+    content: "";
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin-right: 11px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label::before{
+    background-color: #ffffff;  
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.show-options{
+    text-decoration: none;
+    color: #ffffff;
+    padding-left: 5px;
+}
+
+.button-submit{
+    width: 211px;
+    height: 51px;
+    color: #ffffff;
+    background-color: rgb(44,113,184,0.75);
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid #ffffff;
+    margin-top: 18px;
+}
+
+.button-submit:hover{
+    color: rgb(44,113,184,1);
+    background-color: #ffffff;
 }
