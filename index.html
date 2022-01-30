@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <script src="https://kit.fontawesome.com/63e4a29229.js" crossorigin="anonymous"></script>
@@ -57,7 +60,7 @@
                         </div>
                         <div class="col-3">
                             <div class="cart">
-                                <div class="product-number">4</div>
+                                <div class="product-number" id="products-count">0</div>
                             </div>
                         </div>
                     </div>
@@ -68,9 +71,22 @@
     </header>
 
     <main class="main">
-        <div class="slider"></div>
         <div class="container">
-
+            <div class="row">
+                <div class="col-12">
+                    <div class="slider">
+                        <div>Slide #1</div>
+                        <div>Slide #2</div>
+                        <div>Slide #3</div>
+                        <div>Slide #4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="line">
+        </div>
+        <div class="container">
             <div class="row">
                 <div class="col-3">
                     <div class="filtr">
@@ -125,14 +141,10 @@
 
                         <a href="" class="show-options">Show more options...</a>
                         <button class="button-submit">SUBMIT</button>
-
-
                         </div>
- 
-
-
-                    </div>
+                    </div>                
                 </div>
+                
                 <div class="col-9">
                     <div class="row">
                         <div class="col-12">
@@ -147,9 +159,9 @@
                         <div class="col-8">
                             <div class="title">Laptops and Tablets</div>
                         </div>
-                        <div class="col-4">
+                        <div class = "col-4" data-aos = "fade-right" data-aos-easing = "linear" data-aos-duration = "1500">
                             <ul class="sort">
-                                <li><a href="">sort by price <i class="fas fa-angle-down arrow-white"></i></a>
+                                <li><a href="">sort by price<i class="fas fa-angle-down arrow-white"></i></a>
                                     <ul class="sort-category">
                                         <li><a href="">sort by name</a></li>
                                         <li><a href="">sort by date</a></li>
@@ -160,7 +172,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-4" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
                             <div class="product">
                                 <div class="product-image">
                                     <img class="img-product" src="images/product-1.png" alt="">
@@ -183,13 +195,18 @@
                                     <div class="product-price">
                                         $599 <sup class="price-sup">25</sup>
                                     </div>
+                                    <div class="product-quantity">
+                                       <button class = "decrement-button">-</button>
+                                       <input type="text" value="1" readonly>
+                                       <button class = "increment-button">+</button>
+                                    </div>
                                     <button class="button-products button-more-details">MORE DETAILS</button>
                                     <button class="button-products button-add-to-cart">ADD TO CART</button>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-4" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
                             <div class="product">
                                 <div class="product-image">
                                     <img class="img-product" src="images/product-2.png" alt="">
@@ -212,13 +229,18 @@
                                     <div class="product-price">
                                         $1250 <sup class="price-sup">99</sup>
                                     </div>
+                                    <div class="product-quantity">
+                                        <button class = "decrement-button">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class = "increment-button">+</button>
+                                     </div>
                                     <button class="button-products button-more-details">MORE DETAILS</button>
                                     <button class="button-products button-add-to-cart">ADD TO CART</button>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-4" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
                             <div class="product">
                                 <div class="product-image">
                                     <img class="img-product" src="images/product-3.png" alt="">
@@ -241,13 +263,18 @@
                                     <div class="product-price">
                                         $399 <sup class="price-sup">50</sup>
                                     </div>
+                                    <div class="product-quantity">
+                                        <button class = "decrement-button">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class = "increment-button">+</button>
+                                     </div>
                                     <button class="button-products button-more-details">MORE DETAILS</button>
                                     <button class="button-products button-add-to-cart">ADD TO CART</button>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-4" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
                             <div class="product">
                                 <div class="product-image">
                                     <img class="img-product" src="images/product-4.png" alt="">
@@ -270,13 +297,18 @@
                                     <div class="product-price">
                                         $599 <sup class="price-sup">25</sup>
                                     </div>
+                                    <div class="product-quantity">
+                                        <button class = "decrement-button">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class = "increment-button">+</button>
+                                     </div>
                                     <button class="button-products button-more-details">MORE DETAILS</button>
                                     <button class="button-products button-add-to-cart">ADD TO CART</button>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-4" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
                             <div class="product">
                                 <div class="product-image">
                                     <img class="img-product" src="images/product-5.png" alt="">
@@ -299,13 +331,18 @@
                                     <div class="product-price">
                                         $1250 <sup class="price-sup">99</sup>
                                     </div>
+                                    <div class="product-quantity">
+                                        <button class = "decrement-button">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class = "increment-button">+</button>
+                                     </div>
                                     <button class="button-products button-more-details">MORE DETAILS</button>
                                     <button class="button-products button-add-to-cart">ADD TO CART</button>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-4" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
                             <div class="product">
                                 <div class="product-image">
                                     <img class="img-product" src="images/product-6.png" alt="">
@@ -328,13 +365,18 @@
                                     <div class="product-price">
                                         $399 <sup class="price-sup">50</sup>
                                     </div>
+                                    <div class="product-quantity">
+                                        <button class = "decrement-button">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class = "increment-button">+</button>
+                                     </div>
                                     <button class="button-products button-more-details">MORE DETAILS</button>
                                     <button class="button-products button-add-to-cart">ADD TO CART</button>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-4" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
                             <div class="product">
                                 <div class="product-image">
                                     <img class="img-product" src="images/product-7.png" alt="">
@@ -357,13 +399,18 @@
                                     <div class="product-price">
                                         $599 <sup class="price-sup">25</sup>
                                     </div>
+                                    <div class="product-quantity">
+                                        <button class = "decrement-button">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class = "increment-button">+</button>
+                                     </div>
                                     <button class="button-products button-more-details">MORE DETAILS</button>
                                     <button class="button-products button-add-to-cart">ADD TO CART</button>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-4" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
                             <div class="product">
                                 <div class="product-image">
                                     <img class="img-product" src="images/product-2.png" alt="">
@@ -386,13 +433,18 @@
                                     <div class="product-price">
                                         $1250 <sup class="price-sup">99</sup>
                                     </div>
+                                    <div class="product-quantity">
+                                        <button class = "decrement-button">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class = "increment-button">+</button>
+                                     </div>
                                     <button class="button-products button-more-details">MORE DETAILS</button>
                                     <button class="button-products button-add-to-cart">ADD TO CART</button>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-4" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
                             <div class="product">
                                 <div class="product-image">
                                     <img class="img-product" src="images/product-3.png" alt="">
@@ -415,6 +467,11 @@
                                     <div class="product-price">
                                         $399 <sup class="price-sup">50</sup>
                                     </div>
+                                    <div class="product-quantity">
+                                        <button class = "decrement-button">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class = "increment-button">+</button>
+                                     </div>
                                     <button class="button-products button-more-details">MORE DETAILS</button>
                                     <button class="button-products button-add-to-cart">ADD TO CART</button>
                                 </div>
@@ -436,6 +493,27 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal">
+        <div class="modal-block">
+            <form action="">
+                <div class="btn-close">X</div>
+                <h3>Please call for more details</h3>
+                <div class="form-field">
+                    <input type="text" placeholder="Your name">
+                </div>
+                <div class="form-field">
+                    <input type="text" placeholder="Your phone">
+                </div>
+                <button class = "btn-call">Please call</button>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src = "app.js"></script>
 </body>
 
 </html>
